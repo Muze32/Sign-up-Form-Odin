@@ -6,3 +6,35 @@
     font-style: normal;
 
 }
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+body > div {
+    height: 100vh;
+}
+
+
+/************************Logo**********************/
+
+.img-logo {
+    background-image: url(img/sakura.jpg);
+    width: 30%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: relative;
+    top: 3rem;
+    font-family: "norsebold";
+}
+
+.logo img {
+    width: 100px;
+}
