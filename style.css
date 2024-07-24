@@ -6,9 +6,15 @@
     font-style: normal;
 }
 
+:root {
+    --bg-principal: rgb(232, 232, 232);
+}
+
+
 body {
     display: flex;
     margin: 0;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 
 body > div {
@@ -22,7 +28,7 @@ body > div {
     background-image: url(img/leafs.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 30%;
+    width: 30vw;
 }
 
 .logo {
@@ -40,4 +46,46 @@ body > div {
 
 .logo img {
     height: 100px;
+}
+
+
+/*****************Information*********************/
+
+.information {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.information > * {
+    padding-left: 4rem;
+    padding-right: 13rem;
+    flex-grow: 1;
+}
+
+/************INTRO*************/
+
+.information > div {
+    background-color: var(--bg-principal);
+}
+
+.intro {
+    padding-top: 7rem;
+}
+
+.intro p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.intro p:first-child {
+    padding-bottom: 2rem;
+}
+
+/***********FORM****************/
+
+form > div {
+    display: flex;
+    justify-content: space-between;
 }
