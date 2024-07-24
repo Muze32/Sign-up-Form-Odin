@@ -8,6 +8,7 @@
 
 :root {
     --bg-principal: rgb(232, 232, 232);
+    --input-bg-color: rgb(253 251 251);
 }
 
 
@@ -88,4 +89,19 @@ body > div {
 form > div {
     display: flex;
     justify-content: space-between;
+}
+
+label {
+    display: block;
+}
+
+input {
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background-color: var(--input-bg-color);
+    border: 1px solid #E5E7EB;
+}
+
+input:invalid {
+    border-color: red;
 }
