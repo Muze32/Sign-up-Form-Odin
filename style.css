@@ -9,6 +9,7 @@
 :root {
     --bg-principal: rgb(232, 232, 232);
     --input-bg-color: rgb(253 251 251);
+    --green: #596D48;
 }
 
 
@@ -88,7 +89,7 @@ body > div {
 
 form > div {
     display: flex;
-    justify-content: space-between;
+    gap: 10vw;
 }
 
 label {
@@ -104,4 +105,19 @@ input {
 
 input:invalid {
     border-color: red;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+label, h2 {
+    color: var(--green);
+}
+
+label {
+    font-size: .85rem;
+    font-weight: 700;
+    padding-bottom: .2rem;
 }
